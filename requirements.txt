@@ -15,11 +15,10 @@ langchain-text-splitters==0.3.11
 langchain-community==0.3.23
 
 # ── Vector store (Chroma) ─────────────────────────────────────────────
-# NOTE: langchain-chroma 1.1.0 requires chromadb>=1.3.5, which conflicts
-# with langchain-community 0.3.23's older dependency chain.
-# Downgraded langchain-chroma to 0.2.6 to match chromadb==0.5.23.
-langchain-chroma==0.2.6
-chromadb==0.5.23
+# NOTE: every langchain-chroma release needs chromadb>=1.0.20, so chromadb
+# is left unpinned here and pip will install a version that satisfies it.
+langchain-chroma==1.1.0
+chromadb>=1.0.20
 
 # ── Gemini (LLM + Embeddings) ──────────────────────────────────────────
 langchain-google-genai==2.1.4
