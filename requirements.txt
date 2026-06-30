@@ -1,0 +1,32 @@
+# ── CodeBuddy — requirements.txt ─────────────────────────────────────
+# Matches the imports actually used in loader.py / splitter.py / embedder.py / chain.py:
+#   - langchain_core.documents, langchain_core.prompts, langchain_core.output_parsers,
+#     langchain_core.runnables
+#   - langchain_text_splitters (RecursiveCharacterTextSplitter, Language)
+#   - langchain_community.document_loaders (TextLoader), vectorstores (legacy Chroma import)
+#   - langchain_chroma (new Chroma import used in chain.py)
+#   - langchain_google_genai (Gemini chat + embeddings)
+#
+# Install:  pip install -r requirements.txt
+
+# ── Core LangChain ────────────────────────────────────────────────────
+langchain-core==0.3.79
+langchain-text-splitters==0.3.11
+langchain-community==0.3.23
+
+# ── Vector store (Chroma) ─────────────────────────────────────────────
+langchain-chroma==1.1.0
+chromadb==0.5.23
+
+# ── Gemini (LLM + Embeddings) ──────────────────────────────────────────
+langchain-google-genai==2.1.4
+google-generativeai==0.8.4
+
+# ── App framework ──────────────────────────────────────────────────────
+streamlit==1.45.1
+
+# ── GitHub repo cloning ─────────────────────────────────────────────────
+gitpython==3.1.44
+
+# ── Env variable loading (.env file) ────────────────────────────────────
+python-dotenv==1.0.1
