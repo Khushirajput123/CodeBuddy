@@ -134,18 +134,6 @@ These are adjustable from the sidebar's **Advanced settings** panel:
 | Top-k retrieval | 6 | Number of chunks sent to the LLM per question |
 
 ---
-
-## 🗺️ Roadmap
-
-- [ ] Persistent chat history across sessions (SQLite)
-- [ ] Multi-repository support (index and switch between multiple repos)
-- [ ] JWT-based authentication for multi-user deployments
-- [ ] Auto-generated full repository analysis on first load
-- [ ] Dark, professional UI redesign
-- [ ] FastAPI + PostgreSQL backend for production scale
-
----
-
 ## 🤝 Contributing
 
 Issues and pull requests are welcome. If you find a bug or have a feature idea, feel free to open an issue.
